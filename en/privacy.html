@@ -1,9 +1,11 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Politique de Confidentialité - Stackly</title>
+    <title>Privacy Policy - Stackly</title>
+    <link rel="alternate" hreflang="fr" href="https://ultraviolettes.github.io/stackly-app/privacy.html" />
+    <link rel="alternate" hreflang="en" href="https://ultraviolettes.github.io/stackly-app/en/privacy.html" />
     <style>
       * {
         margin: 0;
@@ -12,7 +14,7 @@
       }
       body {
         font-family:
-          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
         line-height: 1.7;
         color: #1a1a2e;
         background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
@@ -32,6 +34,26 @@
         margin-bottom: 40px;
         padding-bottom: 32px;
         border-bottom: 1px solid #e5e7eb;
+      }
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+      .back-link,
+      .lang-link {
+        color: #6366f1;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .lang-link.is-active {
+        color: #1a1a2e;
+      }
+      .lang-switch {
+        display: flex;
+        gap: 12px;
       }
       .logo {
         width: 72px;
@@ -122,7 +144,7 @@
         background: #f3f4f6;
         padding: 2px 6px;
         border-radius: 4px;
-        font-family: 'SF Mono', Monaco, monospace;
+        font-family: "SF Mono", Monaco, monospace;
         font-size: 13px;
         color: #6366f1;
       }
@@ -136,13 +158,6 @@
         color: #6366f1;
         font-weight: 600;
         font-size: 15px;
-      }
-      a {
-        color: #6366f1;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
       }
       .no-collect {
         display: grid;
@@ -158,7 +173,7 @@
         font-size: 14px;
       }
       .no-collect-item::before {
-        content: '✗';
+        content: "✗";
         color: #ef4444;
         font-weight: bold;
       }
@@ -172,24 +187,20 @@
         .no-collect {
           grid-template-columns: 1fr;
         }
+        .topbar {
+          flex-direction: column;
+          align-items: flex-start;
+        }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div
-        style="
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          gap: 16px;
-          margin-bottom: 24px;
-        "
-      >
-        <a href="./">Retour a Stackly</a>
-        <div style="display: flex; gap: 12px" aria-label="Choix de langue">
-          <a style="color: #1a1a2e; font-weight: 700" href="privacy.html">FR</a>
-          <a href="en/privacy.html">EN</a>
+      <div class="topbar">
+        <a class="back-link" href="./">Back to Stackly</a>
+        <div class="lang-switch" aria-label="Language selector">
+          <a class="lang-link" href="../privacy.html">FR</a>
+          <a class="lang-link is-active" href="./privacy.html">EN</a>
         </div>
       </div>
 
@@ -201,120 +212,94 @@
             <rect x="12" y="16" width="20" height="15" rx="2" fill="white" />
           </svg>
         </div>
-        <h1>Politique de Confidentialité</h1>
-        <p class="update-date">Dernière mise à jour : 24 janvier 2026</p>
+        <h1>Privacy Policy</h1>
+        <p class="update-date">Last updated: January 24, 2026</p>
       </div>
 
       <h2>Introduction</h2>
       <p>
-        Stackly est une extension de navigateur qui vous aide à organiser vos onglets par
-        workspaces. Nous prenons votre vie privée très au sérieux.
+        Stackly is a browser extension that helps you organize your tabs into
+        workspaces. We take your privacy seriously.
       </p>
 
-      <h2>Données collectées</h2>
+      <h2>Data We Collect</h2>
 
-      <h3>Ce que nous collectons</h3>
+      <h3>What we collect</h3>
       <div class="highlight">
-        <p>Aucune donnée personnelle n'est collectée ni transmise à des serveurs externes.</p>
+        <p>No personal data is collected or sent to external servers.</p>
       </div>
       <p>
-        Stackly stocke uniquement les données suivantes
-        <strong>localement sur votre appareil</strong> :
+        Stackly only stores the following information <strong>locally on your device</strong>:
       </p>
       <ul>
-        <li>Les noms et configurations de vos workspaces</li>
-        <li>Les URLs et titres des onglets sauvegardés dans vos workspaces</li>
-        <li>Vos préférences (thème, paramètres de suspension d'onglets)</li>
-        <li>Statistiques d'utilisation locales (nombre de switches, etc.)</li>
+        <li>Workspace names and configuration</li>
+        <li>URLs and titles of tabs saved in your workspaces</li>
+        <li>Your preferences such as theme and tab suspension settings</li>
+        <li>Local usage statistics such as workspace switches</li>
       </ul>
 
-      <h3>Ce que nous ne collectons PAS</h3>
+      <h3>What we do NOT collect</h3>
       <div class="no-collect">
-        <div class="no-collect-item">Données d'identification personnelle</div>
-        <div class="no-collect-item">Historique de navigation</div>
-        <div class="no-collect-item">Données de formulaire ou mots de passe</div>
-        <div class="no-collect-item">Données transmises à des tiers</div>
-        <div class="no-collect-item">Cookies de tracking</div>
-        <div class="no-collect-item">Analyse comportementale</div>
+        <div class="no-collect-item">Personally identifiable information</div>
+        <div class="no-collect-item">Browsing history</div>
+        <div class="no-collect-item">Form data or passwords</div>
+        <div class="no-collect-item">Data sent to third parties</div>
+        <div class="no-collect-item">Tracking cookies</div>
+        <div class="no-collect-item">Behavioral analytics</div>
       </div>
 
-      <h2>Permissions utilisées</h2>
+      <h2>Permissions Used</h2>
       <table>
         <thead>
           <tr>
             <th>Permission</th>
-            <th>Utilisation</th>
+            <th>Purpose</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>tabs</code></td>
-            <td>Lire et gérer les onglets pour les sauvegarder dans les workspaces</td>
+            <td>Read and manage tabs so they can be saved into workspaces</td>
           </tr>
           <tr>
             <td><code>storage</code></td>
-            <td>Sauvegarder vos workspaces et préférences localement</td>
+            <td>Save your workspaces and preferences locally</td>
           </tr>
           <tr>
             <td><code>alarms</code></td>
-            <td>Déclencher la sauvegarde automatique et la suspension d'onglets</td>
+            <td>Trigger autosave and tab suspension logic</td>
           </tr>
         </tbody>
       </table>
 
-      <h2>Stockage des données</h2>
+      <h2>Data Storage</h2>
       <p>
-        Toutes les données sont stockées via l'API <code>chrome.storage.local</code> (ou équivalent
-        Firefox/Safari) :
+        All data is stored using the <code>chrome.storage.local</code> API (or the Safari
+        equivalent):
       </p>
       <ul>
-        <li>Les données restent <strong>uniquement sur votre appareil</strong></li>
-        <li>Les données ne sont <strong>jamais synchronisées</strong> avec des serveurs cloud</li>
-        <li>Les données sont supprimées si vous désinstallez l'extension</li>
+        <li>Your data stays <strong>only on your device</strong></li>
+        <li>Your data is <strong>never synced</strong> to cloud servers</li>
+        <li>Your data is removed if you uninstall the extension</li>
       </ul>
 
-      <h2>Partage des données</h2>
-      <div class="highlight">
-        <p>Nous ne partageons aucune donnée avec des tiers.</p>
-      </div>
-      <p>Stackly fonctionne entièrement en local, sans serveur backend ni analytics.</p>
+      <h2>Data Sharing</h2>
+      <p>Stackly does not sell, rent, or share your data with third parties.</p>
 
-      <h2>Sécurité</h2>
-      <ul>
-        <li>Aucune communication réseau n'est effectuée par l'extension</li>
-        <li>
-          Le code source est disponible sur
-          <a href="https://github.com/ultraviolettes/workspace-manager">GitHub</a> pour audit
-        </li>
-      </ul>
-
-      <h2>Vos droits</h2>
-      <p>Vous pouvez à tout moment :</p>
-      <ul>
-        <li>Exporter vos données (via la fonction d'export de l'extension)</li>
-        <li>Supprimer toutes vos données en désinstallant l'extension</li>
-        <li>Effacer les données via les paramètres de l'extension</li>
-      </ul>
+      <h2>Security</h2>
+      <p>
+        Because your data stays on your machine and is not transmitted externally, the
+        privacy risk surface is intentionally limited.
+      </p>
 
       <h2>Contact</h2>
-      <p>Pour toute question concernant cette politique de confidentialité :</p>
-      <ul>
-        <li>
-          GitHub :
-          <a href="https://github.com/ultraviolettes/workspace-manager/issues"
-            >github.com/ultraviolettes/workspace-manager/issues</a
-          >
-        </li>
-      </ul>
-
-      <h2>Modifications</h2>
       <p>
-        Cette politique peut être mise à jour. Les modifications seront publiées sur cette page avec
-        une nouvelle date de mise à jour.
+        If you have any questions about this privacy policy, you can contact us via the
+        Stackly project repository.
       </p>
 
       <div class="footer">
-        <p>Stackly respecte votre vie privée. Vos données restent les vôtres.</p>
+        <p>Stackly respects your privacy by design.</p>
       </div>
     </div>
   </body>
